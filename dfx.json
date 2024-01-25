@@ -1,0 +1,30 @@
+{
+  "canisters": {
+    "weather__backend": {
+      "candid": "src/weather__backend/weather__backend.did",
+      "package": "weather__backend",
+      "type": "rust"
+    },
+    "weather__frontend": {
+      "dependencies": [
+        "weather__backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/weather__frontend/src/index.html"
+      },
+      "source": [
+        "src/weather__frontend/assets",
+        "dist/weather__frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

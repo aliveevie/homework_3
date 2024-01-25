@@ -1,4 +1,4 @@
-import { weather__backend } from "../../declarations/weather__backend";
+import { weather_backend } from "../../declarations/weather__backend";
 
 document.querySelector("form").addEventListener("submit", async (e) => {
   e.preventDefault();
